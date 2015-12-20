@@ -12,60 +12,6 @@
 					<div id="sidebar" class="span3">
 						<div class="sidebar-nav">
 									<div class="moduletable">
-<script type="text/javascript">
-//<![CDATA[
-	jQuery(function($)
-	{
-		var value, $searchword = $('#mod-finder-searchword');
-
-		// Set the input value if not already set.
-		if (!$searchword.val())
-		{
-			$searchword.val('Search...');
-		}
-
-		// Get the current value.
-		value = $searchword.val();
-
-		// If the current value equals the default value, clear it.
-		$searchword.on('focus', function()
-		{	var $el = $(this);
-			if ($el.val() === 'Search...')
-			{
-				$el.val('');
-			}
-		});
-
-		// If the current value is empty, set the previous value.
-		$searchword.on('blur', function()
-		{	var $el = $(this);
-			if (!$el.val())
-			{
-				$el.val(value);
-			}
-		});
-
-		$('#mod-finder-searchform').on('submit', function(e){
-			e.stopPropagation();
-			var $advanced = $('#mod-finder-advanced');
-			// Disable select boxes with no value selected.
-			if ( $advanced.length)
-			{
-				 $advanced.find('select').each(function(index, el) {
-					var $el = $(el);
-					if(!$el.val()){
-						$el.attr('disabled', 'disabled');
-					}
-				});
-			}
-		});
-
-		/*
-		 * This segment of code sets up the autocompleter.
-		 */
-			});
-//]]>
-</script>
 
 <form id="mod-finder-searchform" action="http://www.taokungfusystem.com/headquarter/index.php?option=com_finder&view=search" method="get" class="form-search">
 	<div class="finder">
