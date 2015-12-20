@@ -12,7 +12,18 @@ Template.layout.helpers({
   }
 })
 Meteor.startup(function () {
-    console.log("Hello Kuy");
     $('body').addClass('site com_content view-featured no-layout no-task itemid-101')
+    var imgArray = new Array("pic tao/Head1.jpg","pic tao/Head2.jpg","pic tao/Head3.jpg","pic tao/Head4.jpg","pic tao/Head5.jpg");
+    var imgCount = 0;
+    startTime()
+
+    function startTime() {
+      if(imgCount == imgArray.length) {
+          imgCount = 0;
+      }
+      document.getElementById("img1").src = imgArray[imgCount];
+      imgCount++;
+      setTimeout("startTime()", 1500);
+    }
 })
 //Hello Naress
