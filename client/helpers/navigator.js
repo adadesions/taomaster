@@ -1,5 +1,5 @@
 Template.engNavigator.onRendered(function () {
-  var imgArray = ["/images/taoHeader/Head1.jpg","/images/taoHeader/Head2.jpg","/images/taoHeader/Head3.jpg","/images/taoHeader/Head4.jpg","/images/taoHeader/Head5.jpg"]
+  var imgArray = ["/images/taoHeader/H1.jpg","/images/taoHeader/H2.jpg","/images/taoHeader/H3.jpg","/images/taoHeader/H4.jpg","/images/taoHeader/H5.jpg"]
   var imgCount = 0;
   var startTime = function () {
     if(imgCount == imgArray.length) imgCount = 0
