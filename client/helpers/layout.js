@@ -12,7 +12,6 @@ Template.layout.helpers({
   }
 })
 Meteor.startup(function () {
-    console.log("Hello Kuy");
     $('body').addClass('site com_content view-featured no-layout no-task itemid-101')
+    $('html').css({'padding':'0'})   
 })
-//Hello Naress
