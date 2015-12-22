@@ -12,5 +12,6 @@ Template.layout.helpers({
   }
 })
 Meteor.startup(function () {
-    $('body').addClass('site com_content view-featured no-layout no-task itemid-101')    
+    $('body').addClass('site com_content view-featured no-layout no-task itemid-101')
+    $('html').css({'padding':'0'})   
 })
